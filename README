@@ -1,0 +1,5 @@
+Attempting to compile the source, I discovered I needed to create a "linux" directory in the linuxdoom-1.10 directory.
+Next error I got was a missing library for X11, installed via sudo apt-get install libx11-dev
+Next error was missing library X11/extensions/XShm.h, installed via sudo apt-get install libxext-dev
+next error errnos.h: No such file or directory, this was not fixed by installed a package. It appears to need to be adjusted in the source to be errno.h
+    Changing that potential typo appears to have worked, investigating the new error now.
